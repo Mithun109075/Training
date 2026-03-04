@@ -1,0 +1,28 @@
+package DAY06;
+import java.util.Scanner;
+public class StringBufferDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        StringBuffer sb = new StringBuffer(input);
+        //1.append
+        sb.append("Alien Force");
+        System.out.println(sb);
+
+        //2.insert(index,value)
+        sb.insert(1, "XLR8");
+        System.out.println(sb);
+
+        //3.delete()
+        sb.delete(1, 5);
+        System.out.println(sb);
+
+        //replace(start,end,value)
+        sb.replace(6, 11, "Ultimate Alien");
+        System.out.println(sb);
+
+        //reverse()
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
