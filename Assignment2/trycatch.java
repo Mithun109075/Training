@@ -1,0 +1,19 @@
+package Assignment2;
+public class trycatch {
+    public static void main(String[] args) {
+
+        try {
+            int a = 10;
+            int b = 0;
+
+            int result = a / b;   // exception occurs
+            System.out.println("Result: " + result);
+
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught: Cannot divide by zero");
+
+        } finally {
+            System.out.println("Finally block always executes");
+        }
+    }
+}
